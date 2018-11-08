@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title> Quote By Quote</title>
+  <link href="http://fonts.googleapis.com/css?family=Dancing+Script:700|EB+Garamond" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+  <header>
+      <div class="container">
+        <div class="logo">
+          <h1>Quote By Quote</h1>
+          <ul>
+            <li onClick="scrollToQuote()"> quotes </li>
+            <li onClick="scrollToSubmit()"> submit </li>
+            <li onClick="scrollToAbout()"> About</li>
+          </ul>
+        </div>
+    </div>
+  </header>
+    <div class="container">
+      <section class="quote--body">
+        <div class="quote--body_innerborder">
+        <div id="image"></div>
+        <h1 id="name"></h1>
+        <blockquote id="quote"></blockquote>
+        <cite id="birthday"> </cite>
+        <div class="quote--body_button">
+          <span>&#8592;</span>
+          <a class="button" href="#" onclick="rotateData();">1 </a>
+          <a class="button" href="#" onclick="rotateData1();">2 </a>
+          <a class="button" href="#" onclick="rotateData2();">3 </a>
+          <a class="button" href="#" onclick="rotateData3();">4</a>
+          <a class="button" href="#" onclick="rotateData4();">5</a>
+          <a class="button" href="#" onclick="rotateData5();">6</a>
+          <a class="button" href="#" onclick="rotateData6();">7</a>
+          <a class="button" href="#" onclick="rotateData7();">8</a>
+          <a class="button" href="#" onclick="rotateData8();">9</a>
+          <span id="quoteSection">&#8594;</span>
+        </div>
+      </div>
+      </section>
+      <section class="Submit--quote" id="submitquote">
+        <div class="submit--body_innerborder">
+          <h2>Submit Your Quote</h2>
+              <form action="" method="" onsubmit="return formValidation();" name="subForm">
+                <div>
+                  <label>Author</label>
+                  <input type="text" name="author" value="" />
+                </div>
+                <div>
+                  <label>Date</label>
+                  <input type="text" name="date" value="" />
+                </div>
+                <div>
+                  <label>Quote</label>
+                  <textarea type="text" name="quoteBox" value=""></textarea>
+                </div>
+                <div>
+                   <input type="submit" value="Submit" />
+                </div>
+              </form>
+            </div>
+      </section>
+      <section class="about" id="about">
+        <div class="about--copy">
+          <div class="about--copy_innerborder">
+          <h2>About Quote by Quote</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eleifend in massa vitae ultrices. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed eleifend mauris eget dolor elementum vehicula. Sed faucibus erat ut lorem convallis fringilla. Maecenas dictum aliquet blandit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce ultricies quam ligula, eget fringilla elit laoreet quis. Donec ut pretium elit, sed posuere purus. Sed commodo rutrum nisl, eget maximus sem maximus a. Curabitur tellus mauris, sodales gravida gravida et, vehicula quis sapien. Etiam metus enim, gravida vitae pellentesque eget, placerat dapibus odio. Praesent ut ex eu orci ultricies tristique. Nunc varius felis eu pellentesque volutpat. Fusce vestibulum eget nisi a euismod.</p>
+          <p>Ut facilisis metus ut enim fringilla tristique. Integer a odio at sapien dignissim ultricies eget at sapien. Integer feugiat est nec sem condimentum dictum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut malesuada leo, id lobortis purus. Pellentesque vel scelerisque augue. Aliquam vulputate nisl est, vel maximus neque imperdiet eget. Nulla efficitur nulla nec tellus ullamcorper blandit.</p>
+        </div>
+      </div>
+      </section>
+  </div>
+    <script src="js/db.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

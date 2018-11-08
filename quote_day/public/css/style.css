@@ -1,0 +1,145 @@
+body{
+  font-family: 'EB Garamond', serif;
+  font-size: 20px;
+  color: #736F66;
+}
+
+/* Global */
+
+.container{
+  width: 100%;
+  max-width: 720px;
+  margin: 0px auto;
+}
+h1, h2, h3, h4, h5{
+  font-family: 'EB Garamond', serif;
+}
+
+header h1{
+  font-size: 3em;
+  color: #F35C9F;
+  line-height: 1em;
+    font-family: 'Dancing Script', cursive;
+}
+/* headline */
+header{
+   text-align: center;
+}
+
+header ul li{
+  display: inline-block;
+  border-bottom: 2px dotted #F3F3F3;
+  text-transform: uppercase;
+  margin:0px 50px;
+  cursor: pointer;
+}
+
+header ul li:hover{
+  color: #A7DBD8;
+}
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50% 50%;
+  border: 3px solid #736F66;
+  box-shadow: 2px 2px 2px 2px #ccc;
+  margin: 10px auto;
+  display: block;
+}
+
+/*body styles */
+.quote--body, .Submit--quote, .about{
+  background-color: #F3F3F3;
+  text-align: center;
+  padding:10px;
+  margin: 50px 0px;
+  box-shadow: 1px 1px 2px 1px #ccc;
+}
+
+.quote--body h1{
+    font-size: 2em;
+    line-height: 1em;
+}
+.quote--body blockquote{
+    font-size: 1em;
+    line-height: 1em;
+    margin: 0px;
+}
+
+.quote--body .quote--body_button{
+  margin: 20px;
+}
+a.button{
+  margin: 10px;
+  color: #22ADC2;
+  text-decoration: none;
+}
+a.button:hover{
+  color: #F35C9F;
+  text-decoration:underline;
+}
+.quote--body .quote--body_innerborder{
+    border: 1px solid #736F66;
+      padding:10px;
+}
+.Submit--quote .submit--body_innerborder{
+  border: 1px solid #A7DBD8;
+    padding:10px;
+}
+
+.about--copy_innerborder{
+  border: 1px solid #F35C9F;
+    padding:10px;
+}
+
+/* form Styles */
+input, textarea{
+  font-family: 'EB Garamond', serif;
+  width: 100%;
+}
+label{
+  text-align: left;
+  display: block;
+}
+input[type=text] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+}
+
+/* button */
+input[type=submit]{
+    font-size: 1em;
+    text-transform: uppercase;
+    background-color: #F35C9F;
+    border: none;
+    color: white;
+    padding: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
+      background-color: #A7DBD8;
+      color: #F35C9F;
+}
+
+@media all and (min-width:100px) and (max-width:700px){
+  header h1{
+    font-size: 2em;
+  }
+  header ul li{
+    margin: 5px;
+  }
+  a.button{
+    margin: 5px;
+  }
+}
